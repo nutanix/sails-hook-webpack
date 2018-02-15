@@ -21,14 +21,16 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/teamfa/sails-hook-webpack.git"
+    "url": "git://github.com/nutanix/sails-hook-webpack.git"
   },
   "author": {
     "name": "Mike Diarmid",
     "email": "mike.diarmid@teamfa.com"
   },
   "contributors": [
-    "Elliot Hesp"
+    {
+      "name": "Elliot Hesp"
+    }
   ],
   "devDependencies": {
     "babel-cli": "^6.9.0",
