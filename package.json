@@ -1,58 +1,33 @@
 {
   "name": "sails-hook-webpack",
-  "version": "2.0.4",
+  "version": "1.0.0",
   "description": "Webpack asset pipeline hook for Sails",
-  "keywords": [
-    "sails",
-    "sailsjs",
-    "hook",
-    "sails-hook",
-    "webpack",
-    "build",
-    "asset pipeline"
-  ],
+  "main": "index.js",
   "scripts": {
-    "prepublish": "npm run lint && npm run build",
-    "lint": "eslint src/",
-    "build": "NODE_ENV=production ./node_modules/.bin/babel src --out-dir lib --copy-files",
-    "build-watch": "NODE_ENV=production babel src --out-dir lib --copy-files --watch src",
-    "test": "mocha"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
-  "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/nutanix/sails-hook-webpack.git"
-  },
-  "author": {
-    "name": "Mike Diarmid",
-    "email": "mike.diarmid@teamfa.com"
-  },
-  "contributors": [
-    {
-      "name": "Elliot Hesp"
-    }
-  ],
-  "devDependencies": {
-    "babel-cli": "^6.9.0",
-    "babel-core": "^6.4.0",
-    "babel-eslint": "^4.1.6",
-    "babel-plugin-add-module-exports": "^0.1.2",
-    "babel-plugin-syntax-export-extensions": "^6.5.0",
-    "babel-plugin-transform-export-extensions": "^6.5.0",
-    "babel-preset-es2015": "^6.6.0",
-    "babel-preset-stage-0": "^6.5.0",
-    "eslint": "^2.7.0",
-    "eslint-config-airbnb": "^7.0.0",
-    "eslint-plugin-jsx-a11y": "^0.6.2",
-    "eslint-plugin-react": "^4.3.0",
-    "mocha": "^2.3.3",
-    "sails": "^0.12.1",
-    "threads": "^0.10.1",
-    "webpack": "^1.12.15",
-    "webpack-dev-server": "^1.14.1"
+    "url": "git+https://github.com/nutanix/sails-hook-webpack.git"
   },
   "sails": {
     "isHook": true
   },
-  "license": "MIT"
+  "keywords": [
+    "webpack",
+    "hook",
+    "sails",
+    "thread"
+  ],
+  "author": "Snehal Wadhwani <snehal.wadhwani@nutanix.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nutanix/sails-hook-webpack/issues"
+  },
+  "homepage": "https://github.com/nutanix/sails-hook-webpack#readme",
+  "bundleDependencies": false,
+  "dependencies": {
+    "threads": "^0.10.1"
+  }
 }
