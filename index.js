@@ -111,6 +111,9 @@ exports.default = function (sails) {
         }
         hook.nextAfterBuild();
       });
+      sails.on('lower', function () {
+        thread.kill();
+      });
     } else {
       hook.compiler = (0, _webpack2.default)(config.hook.config, function (err, stats) {
         if (err) throw err;
